@@ -663,7 +663,7 @@ _mongoc_gridfs_file_flush_page (mongoc_gridfs_file_t *file)
    if (r) {
       _mongoc_gridfs_file_page_destroy (file->page);
       file->page = NULL;
-      r = mongoc_gridfs_file_save (file);
+//      r = mongoc_gridfs_file_save (file);
    }
 
    RETURN (r);
